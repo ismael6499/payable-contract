@@ -1,6 +1,6 @@
 # 💸 Payable Contract: Secure Ether Handling & Events
 
-Continuing my **Master in Blockchain Development** at **BlockChainAccelerator** by **@Jose Cruz**, this project focuses on the native capability of the EVM to handle value: **Sending and Receiving Ether**.
+Continuing my **Master in Blockchain Development** at **BlockChain Accelerator Academy**, this project focuses on the native capability of the EVM to handle value: **Sending and Receiving Ether**.
 
 As a **Java Software Engineer**, handling payments usually involves external APIs. In **Solidity**, money is a primitive type. This project demonstrates the modern, secure way to transfer Ether, moving away from legacy functions and implementing gas-efficient patterns.
 
