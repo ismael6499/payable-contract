@@ -17,17 +17,17 @@ contract PayableContract {
         emit Deposit(msg.sender, msg.value);
     }
 
-    function withdrawEther(uint256 amount) public {
-        if (address(this).balance < amount) {
-            revert InsufficientBalance(amount, address(this).balance);
+    function withdrawEther(uint256 _amount) public {
+        if (address(this).balance < _amount) {
+            revert InsufficientBalance(_amount, address(this).balance);
         }
 
-        (bool success, ) = msg.sender.call{value: amount}("");
+        (bool success, ) = msg.sender.call{value: _amount}("");
         
         if (!success) {
             revert TransferFailed();
         }
 
-        emit Withdrawal(msg.sender, amount);
+        emit Withdrawal(msg.sender, _amount);
     }
 }
